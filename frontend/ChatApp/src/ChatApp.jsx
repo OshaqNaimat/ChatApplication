@@ -75,9 +75,8 @@ const ChatApp = () => {
     setTimeout(() => {
       const replyMsg = {
         id: messages.length + 2,
-        senderId: selectedUser.id,
-        text: 'Thanks for your message! I\'ll get back to you soon.',
-        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        // senderId: selectedUser.id,
+        // timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         status: 'read'
       };
       setMessages(prev => [...prev, replyMsg]);
