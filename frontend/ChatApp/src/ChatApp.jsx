@@ -43,6 +43,7 @@ const ChatApp = () => {
   const [isMobileView, setIsMobileView] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
+  const [count,setCount] = useState(0);
   const messagesEndRef = useRef(null);
 
   // Filter users based on search
